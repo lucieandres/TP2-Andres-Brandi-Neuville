@@ -22,3 +22,4 @@ __9.__ On a une erreur dans les badTest, qui est bien censé ne pas fonctionné.
 __10.__ On remarque que l'erreur est toujours présente sur le repo Github après le commit+push.  
   
 __13.__ Après le commit+push, on remarque que la croix a disparu, puisqu'à présent les tests s'exécutent à chaque push  
+ 
