@@ -18,6 +18,6 @@ jobs: # list des jobs à effectuer
           cache: maven
       - name: Build the tests
         run: mvn test
-        Username: iuts3.class
-        Password: kvkekkddxgmibljv
+        username: iuts3.class
+        password: kvkekkddxgmibljv
         webhook: https://hooks.slack.com/services/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
