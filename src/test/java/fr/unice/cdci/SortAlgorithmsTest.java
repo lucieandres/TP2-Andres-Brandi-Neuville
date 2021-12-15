@@ -60,6 +60,7 @@ class SortAlgorithmsTest {
 
     @DisplayName("Should fail : to test Continuous Integration")
     @Test
+    //ajouter le mauvais test
     void badTest() {
         Integer[] input = new Integer[]{1, 3, 5, -3, 15, Integer.MAX_VALUE};
         //Forget to sort the array :
