@@ -1,9 +1,12 @@
+__2. Créer le projet__  
+  
 __B. Exécuter les tests unitaires__  
   
 Les tests mettent autant de temps à cause de la méthode isWellSortedLargeArrays.
 En effet, elle prend 16819 ms.
 Elle prend autant de temps, car la liste est composée de 50 000 integer, et qu'elle est entierement triée 2 fois.  
   
+__3. Intégration continue__   
   
 __A. S'assurer que le code de l'application ne comporte pas d'erreurs__  
   
@@ -22,4 +25,10 @@ __9.__ On a une erreur dans les badTest, qui est bien censé ne pas fonctionné.
 __10.__ On remarque que l'erreur est toujours présente sur le repo Github après le commit+push.  
   
 __13.__ Après le commit+push, on remarque que la croix a disparu, puisqu'à présent les tests s'exécutent à chaque push  
+  
+__4. Exercices__  
+  
+__1.__ Nous avons ajouté iuts3.class@gmail.com aux notifications.  
+
+
  
