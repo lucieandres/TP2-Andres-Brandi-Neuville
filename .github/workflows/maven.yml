@@ -16,5 +16,28 @@ jobs: # list des jobs à effectuer
           java-version: '11'
           distribution: 'adopt'
           cache: maven
+      - name: Compiler le projet # On donne un nom au job
+        run: mvn -B -DskipTests clean package # On lance la commande maven qui lance le build du code
+
       - name: Build the tests
         run: mvn test
+
+      - name: Envoie email
+          if: always()
+          uses: dawidd6/action-send-mail@v2
+          with:
+            server_address: smtp.gmail.com
+            server_port: 465
+            username: iuts3.class
+            password: kvkekkddxgmibljv
+            subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
+            body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
+            to: lucie.andres@etu.unice.fr
+            from: GitHub
+
+            - name: Send Slack
+              if: always()
+              id: slack
+              uses: slackapi/slack-github-action@v1.16.0
+              env:
+                SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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

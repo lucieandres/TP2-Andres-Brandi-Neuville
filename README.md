@@ -26,9 +26,6 @@ __10.__ On remarque que l'erreur est toujours présente sur le repo Github aprè
   
 __13.__ Après le commit+push, on remarque que la croix a disparu, puisqu'à présent les tests s'exécutent à chaque push  
   
-__4. Exercices__  
-  
-__1.__ Nous avons ajouté iuts3.class@gmail.com aux notifications.  
 
 
  
